@@ -1,0 +1,9 @@
+{
+  "name": "personal_website",
+  "version": "0.0.1",
+  "main": "index.js",
+  "repository": "https://github.com/IAmABear/personal_website.git",
+  "author": "Floyd van Boksel <floyd.van.boksel@gmail.com>",
+  "license": "Unlicense",
+  "private": true
+}
