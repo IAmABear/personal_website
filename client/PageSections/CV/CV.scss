@@ -1,0 +1,28 @@
+.cv {
+  align-items: flex-start;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  min-height: 100vh;
+  min-width: 100%;
+}
+
+.title {
+  margin-left: 10%;
+}
+
+.contents {
+  display: flex;
+  flex-flow: column;
+  width: 80%;
+  margin-left: 10%;
+
+  > * {
+    display: inline-flex;
+    flex-flow: row;
+
+    > * {
+      width: 50%;
+    }
+  }
+}
