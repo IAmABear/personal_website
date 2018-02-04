@@ -1,3 +1,5 @@
+@import "../../Utilities/grid.scss";
+
 .cv {
   align-items: flex-start;
   display: flex;
@@ -22,8 +24,30 @@
     display: inline-flex;
     flex-flow: row;
 
+    @media(max-width: map-get($grid-breakpoints, sm)) {
+      flex-flow: column;
+    }
+
+    &:nth-child(2) {
+      > * {
+        width: 100% !important;
+      }
+    }
+
     > * {
-      width: 50%;
+      &:first-child {
+        width: calc(50% - 10px);
+        margin-right: 10px;
+      }
+
+      &:last-child {
+        width: calc(50% - 10px);
+        margin-left: 10px;
+      }
+
+      @media(max-width: map-get($grid-breakpoints, md)) {
+        width: 100% !important;
+      }
     }
   }
 }
