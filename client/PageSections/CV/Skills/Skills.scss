@@ -1,3 +1,30 @@
+$grid-breakpoints: (
+  // Extra small screen / phone
+  xs: 0,
+  // Small screen / phone
+  sm: 576px,
+  // Medium screen / tablet
+  md: 768px,
+  // Large screen / desktop
+  lg: 992px,
+  // Extra large screen / wide desktop
+  xl: 1200px,
+  xxl: 1550px
+);
+
 .skills {
-  
+  display: flex;
+  flex-flow: column;
+}
+
+.current-skils {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap-reverse;
+  justify-content: space-between;
+  width: 100%;
+
+  @media(min-width: map-get($grid-breakpoints, lg)) {
+    flex-direction: row-reverse;
+  }
 }
