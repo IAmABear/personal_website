@@ -1,3 +1,15 @@
 .naw {
-  
+  > ul > li {
+    margin-bottom: 10px;
+    word-break: break-word;
+
+    > *:first-child {
+      margin-right: 10px;
+    }
+  }
+}
+
+.phone, .mail, .residence, .name {
+  display: flex;
+  align-items: center;
 }
