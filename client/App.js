@@ -1,6 +1,5 @@
 import React from "react";
 
-import "./reset.css";
 import styles from "./App.scss";
 
 const App = () => (
