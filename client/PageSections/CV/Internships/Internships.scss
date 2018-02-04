@@ -1,3 +1,26 @@
+@import "../../../Utilities/grid.scss";
+
 .internships {
-  
+
+}
+
+.internships-overview {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap-reverse;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 100%;
+
+  @media(min-width: map-get($grid-breakpoints, lg)) {
+    flex-direction: row-reverse;
+  }
+
+  @media(max-width: map-get($grid-breakpoints, lg)) {
+    flex-flow: column;
+
+    > * {
+      width: 100%;
+    }
+  }
 }
