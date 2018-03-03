@@ -6,8 +6,8 @@ const Minors = () => (
   <section className={styles["minor"]}>
     <h2>Minors</h2>
     <ul>
-      <li>Datavisualisatie (FEBRUARI 2014 - JUNE 2014)</li>
-      <li>Mobile interactie (FEBRUARI 2014 - JUNE 2014)</li>
+      <li className="flow-text">Datavisualisation <i>(September 2013 - February 2014)</i></li>
+      <li className="flow-text">Mobile interaction <i>(February 2014 - June 2014)</i></li>
     </ul>
   </section>
 );
