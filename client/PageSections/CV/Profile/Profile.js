@@ -5,7 +5,7 @@ import styles from "./Profile.scss";
 const Profile = () => (
   <section className={`${styles["profile"]} flow-text`}>
     <h2>Profile</h2>
-    <p>Creating (web)applications that don't u make go nuts when using them is my ultimate goal. Sadly i'm not an all-knowing guru... yet. In my quest to become a guru i'm currently specifically looking to expand my knowledge on responsive design, page optimalisation and animations. </p>
+    <p>Hi, my name is Floyd van Boksel, a UX-designer and a self-taught front-end developer; always looking to expand my programming knowledge and how to support all kind of devices without a hitch. Apart from that, I am always looking for a challenge both in, and outside work hours so hit me up for a chat over a beer or two.</p>
   </section>
 );
 
