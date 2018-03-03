@@ -4,13 +4,15 @@ import styles from "./App.scss";
 
 import {
  Fold,
- CV
+ CV,
+ Contact
 } from "./PageSections";
 
 const App = () => (
   <section className={styles["application"]}>
     <Fold />
     <CV />
+    <Contact />
   </section>
 );
 
