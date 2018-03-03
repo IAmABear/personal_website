@@ -1,0 +1,58 @@
+@import "../../../../Utilities/grid.scss";
+
+.card-wrapper {
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-grow: 1;
+  width: 25%;
+  padding: 20px;
+
+  @media(max-width: map-get($grid-breakpoints, xxl)) {
+    width: 33%;
+  }
+
+  @media(max-width: map-get($grid-breakpoints, lg)) {
+    width: 50%;
+  }
+
+  @media(max-width: map-get($grid-breakpoints, md)) {
+    width: 100%;
+    padding: 20px 0;
+  }
+}
+
+.card {
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-grow: 1;
+  width: 100%;
+
+  h4, h5 {
+    word-break: break-word;
+  }
+
+  &:hover {
+    box-shadow: 5px 5px 15px;
+  }
+}
+
+.image {
+
+  > * {
+    padding: 10px;
+    max-height: 80px;
+    width: auto !important;
+  }
+}
+
+.date {
+
+}
+
+.title {
+  margin-top: 0px;
+}
