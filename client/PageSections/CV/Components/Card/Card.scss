@@ -21,6 +21,54 @@
     width: 100%;
     padding: 20px 0;
   }
+
+  @media print {
+    padding: 0;
+  }
+}
+
+.skills {
+  @media print {
+    > *:first-child {
+      img {
+        display: none;
+      }
+    }
+
+    > *:last-child {
+      > * {
+        display: flex;
+        flex-flow: row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0;
+
+        > * {
+          width: 33%;
+
+          &:first-child {
+            justify-content: flex-start;
+          }
+
+          &:last-child {
+            justify-content: flex-end;
+          }
+        }
+
+        > * {
+          padding-right: 5px;
+
+          &:last-child {
+            padding-right: 0;
+          }
+        }
+
+        p {
+          text-align: right;
+        }
+      }
+    }
+  }
 }
 
 .card {
@@ -33,6 +81,37 @@
 
   h4, h5 {
     word-break: break-word;
+  }
+
+  @media print {
+    box-shadow: none;
+    margin: 0;
+
+    > *:last-child {
+      padding: 0;
+      border: none;
+      width: 100%;
+
+      > * {
+        h4 {
+          font-size: 1rem;
+          margin: 0;
+        }
+
+        h5 {
+          margin: 0;
+          font-size: 1rem;
+
+          > i {
+            font-size: 1rem;
+          }
+        }
+
+        p {
+          font-size: 1rem;
+        }
+      }
+    }
   }
 
   &:hover {

@@ -4,11 +4,11 @@ import styles from "./Card.scss";
 
 class Card extends PureComponent {
   render() {
-    const { imagePath, title, subTitle, text, horizontal } = this.props;
+    const { imagePath, title, subTitle, text, horizontal, type } = this.props;
 
     return (
       <section className={styles["card-wrapper"]}>
-        <div className={`${styles["card"]} ${horizontal ? styles['-horizontal'] : ''} card `}>
+        <div className={`${styles["card"]} ${horizontal ? styles['-horizontal'] : ''} card ${type ? styles[type] : ''}`}>
           <div className={`${styles["image"]} card-image`}>
             <img src={ imagePath } />
           </div>

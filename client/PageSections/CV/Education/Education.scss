@@ -1,6 +1,18 @@
 @import "../../../Utilities/grid.scss";
 
 .education {
+  @media print {
+    h2 {
+      margin: 0px;
+      font-size: 1.3rem;
+      width: 100%;
+
+      border-bottom: 1px solid gray;
+    }
+  }
+}
+
+.educations {
   display: flex;
   flex-flow: column;
 

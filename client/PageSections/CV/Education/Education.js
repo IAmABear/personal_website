@@ -20,9 +20,9 @@ const educations = [
 ];
 
 const Education = () => (
-  <section>
+  <section className={styles["education"]}>
     <h2>Education</h2>
-    <section className={styles["education"]}>
+    <section className={styles["educations"]}>
       { educations.map((i) => (
         <Card key={i.title} {...i} />
       ))}

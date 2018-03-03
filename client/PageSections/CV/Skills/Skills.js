@@ -72,7 +72,7 @@ const Skills = () => (
 
     <section className={styles["current-skils"]}>
       { skills.map((l) => (
-        <Card key={l.title} {...l} subTitle={<Stars {...l} />} />
+        <Card key={l.title} {...l} subTitle={<Stars {...l} />} type="skills" />
       ))}
     </section>
   </section>

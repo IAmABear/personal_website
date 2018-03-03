@@ -1,7 +1,15 @@
 @import "../../../Utilities/grid.scss";
 
 .internships {
+  @media print {
+    h2 {
+      margin: 0px;
+      font-size: 1.3rem;
+      width: 100%;
 
+      border-bottom: 1px solid gray;
+    }
+  }
 }
 
 .internships-overview {
