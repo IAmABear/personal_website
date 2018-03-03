@@ -9,14 +9,10 @@ const Fold = () => (
 
     <ul className={styles["nav-links"]}>
       <li>
-        <button>
-          <a href="#">CV</a>
-        </button>
+        <a href="#" className="waves-effect waves-light btn">CV</a>
       </li>
       <li>
-        <button>
-          <a href="#">Contact</a>
-        </button>
+        <a href="#" className="waves-effect waves-light btn">Contact</a>
       </li>
     </ul>
   </section>
