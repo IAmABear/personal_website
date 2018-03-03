@@ -12,7 +12,7 @@ const Fold = () => (
         <a href="#CV" className="waves-effect waves-light btn">CV</a>
       </li>
       <li>
-        <a href="#" className="waves-effect waves-light btn">Contact</a>
+        <a href="#Contact" className="waves-effect waves-light btn">Contact</a>
       </li>
     </ul>
   </section>
