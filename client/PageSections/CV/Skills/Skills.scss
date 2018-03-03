@@ -16,6 +16,10 @@ $grid-breakpoints: (
   display: flex;
   flex-flow: column;
 
+  h2 {
+    margin-bottom: 0;
+  }
+
   @media print {
     h2 {
       margin: 0px;
