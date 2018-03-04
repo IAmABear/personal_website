@@ -1,4 +1,5 @@
 import React, { PureComponent } from "react";
+import LazyLoad from 'react-lazyload';
 
 import styles from "./Card.scss";
 
@@ -10,7 +11,9 @@ class Card extends PureComponent {
       <section className={styles["card-wrapper"]}>
         <div className={`${styles["card"]} ${horizontal ? styles['-horizontal'] : ''} card ${type ? styles[type] : ''}`}>
           <div className={`${styles["image"]} card-image`}>
-            <img src={ imagePath } />
+            <LazyLoad height={80} width={80}>
+              <img src={ imagePath } />
+            </LazyLoad>
           </div>
           <div className="card-stacked">
             <div className="card-content">
