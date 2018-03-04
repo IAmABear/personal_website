@@ -1,6 +1,7 @@
 const webpack = require('webpack');
 const path = require('path');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const { env } = require('process')
 
 const HtmlWebpackPlugin = require('html-webpack-plugin');
@@ -36,6 +37,23 @@ module.exports = {
   },
   plugins: [
     new ExtractTextPlugin("styles.css"),
-    HtmlWebpackPluginConfig
+    HtmlWebpackPluginConfig,
+    new UglifyJsPlugin({
+      uglifyOptions: {
+        ecma: 8,
+        cache: true,
+        mangle: true,
+        compress: {
+          warnings: false, // Suppress uglification warnings
+          pure_getters: true,
+          unsafe: true,
+          unsafe_comps: true
+        },
+        output: {
+          comments: false,
+        },
+        exclude: [/\.min\.js$/gi],
+      }
+    })
   ]
 }
