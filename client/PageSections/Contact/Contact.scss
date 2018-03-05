@@ -1,0 +1,25 @@
+.contact {
+  align-items: center;
+  display: flex;
+  background-color: #009688;
+  flex-flow: column;
+  justify-content: center;
+  min-height: 100vh;
+  min-width: 100%;
+  color: white;
+
+  @media print {
+    display: none;
+  }
+
+  li {
+    display: flex;
+    align-items: center;
+    color: white;
+
+    i {
+      margin-right: 10px;
+      color: black;
+    }
+  }
+}

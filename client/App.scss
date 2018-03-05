@@ -4,8 +4,10 @@
 
 .application {
   display: flex;
+  flex-flow: column;
 }
 
-.title {
-  font-family: 'Roboto', sans-serif;
+@page {
+  margin: 0;
+  size: auto;
 }

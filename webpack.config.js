@@ -1,6 +1,8 @@
 const webpack = require('webpack');
 const path = require('path');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+const CompressionPlugin = require("compression-webpack-plugin");
 const { env } = require('process')
 
 const HtmlWebpackPlugin = require('html-webpack-plugin');
@@ -36,6 +38,30 @@ module.exports = {
   },
   plugins: [
     new ExtractTextPlugin("styles.css"),
-    HtmlWebpackPluginConfig
+    HtmlWebpackPluginConfig,
+    new UglifyJsPlugin({
+      uglifyOptions: {
+        ecma: 8,
+        cache: true,
+        mangle: true,
+        compress: {
+          warnings: false, // Suppress uglification warnings
+          pure_getters: true,
+          unsafe: true,
+          unsafe_comps: true
+        },
+        output: {
+          comments: false,
+        },
+        exclude: [/\.min\.js$/gi],
+      }
+    }),
+    new CompressionPlugin({
+      asset: "[path].gz[query]",
+      algorithm: "gzip",
+      test: /\.js$|\.css$|\.html$/,
+      threshold: 10240,
+      minRatio: 0
+    })
   ]
 }
