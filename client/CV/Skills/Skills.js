@@ -2,7 +2,7 @@ import React from "react";
 
 import styles from "./Skills.scss";
 
-import Card from "../Components/Card";
+import Card from "../../Card";
 import Stars from "./Stars";
 
 const skills = [
