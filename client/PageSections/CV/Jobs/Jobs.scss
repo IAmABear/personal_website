@@ -20,12 +20,8 @@
   align-items: stretch;
   width: 100%;
 
-  @media(min-width: map-get($grid-breakpoints, lg)) {
-    flex-direction: row-reverse;
-  }
-
-  @media(max-width: map-get($grid-breakpoints, lg)) {
-    flex-flow: column;
+  @media(max-width: map-get($grid-breakpoints, xxl)) {
+    flex-flow: column-reverse;
 
     > * {
       width: 100%;
