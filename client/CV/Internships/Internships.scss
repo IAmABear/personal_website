@@ -1,6 +1,6 @@
-@import "../../../Utilities/grid.scss";
+@import "../../Utilities/grid.scss";
 
-.jobs {
+.internships {
   @media print {
     h2 {
       margin: 0px;
@@ -12,7 +12,7 @@
   }
 }
 
-.jobs-overview {
+.internships-overview {
   display: flex;
   flex-flow: row;
   flex-wrap: wrap-reverse;
@@ -20,12 +20,8 @@
   align-items: stretch;
   width: 100%;
 
-  @media(min-width: map-get($grid-breakpoints, lg)) {
-    flex-direction: row-reverse;
-  }
-
-  @media(max-width: map-get($grid-breakpoints, lg)) {
-    flex-flow: column;
+  @media(max-width: map-get($grid-breakpoints, xxl)) {
+    flex-flow: column-reverse;
 
     > * {
       width: 100%;
