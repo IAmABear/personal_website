@@ -16,7 +16,7 @@ module.exports = {
   entry: './client/index.js',
   output: {
     path: path.resolve('dist'),
-    filename: 'index_bundle.js'
+    filename: 'index_bundle_[hash].js'
   },
   module: {
     loaders: [
@@ -37,7 +37,7 @@ module.exports = {
     ]
   },
   plugins: [
-    new ExtractTextPlugin("styles.css"),
+    new ExtractTextPlugin("styles_[hash].css"),
     HtmlWebpackPluginConfig,
     new UglifyJsPlugin({
       uglifyOptions: {
