@@ -41,17 +41,23 @@ module.exports = {
     HtmlWebpackPluginConfig,
     new UglifyJsPlugin({
       uglifyOptions: {
-        ecma: 8,
-        cache: true,
         mangle: true,
+        sourcemap: false,
+        debug: false,
+        minimize: true,
         compress: {
-          warnings: false, // Suppress uglification warnings
-          pure_getters: true,
-          unsafe: true,
-          unsafe_comps: true
+            warnings: false,
+            conditionals: true,
+            unused: true,
+            comparisons: true,
+            sequences: true,
+            dead_code: true,
+            evaluate: true,
+            if_return: true,
+            join_vars: true
         },
         output: {
-          comments: false,
+          comments: false
         },
         exclude: [/\.min\.js$/gi],
       }
