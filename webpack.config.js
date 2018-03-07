@@ -16,7 +16,7 @@ module.exports = {
   entry: './client/index.js',
   output: {
     path: path.resolve('dist'),
-    filename: 'index_bundle.js'
+    filename: 'index_bundle_[hash].js'
   },
   module: {
     loaders: [
@@ -37,21 +37,27 @@ module.exports = {
     ]
   },
   plugins: [
-    new ExtractTextPlugin("styles.css"),
+    new ExtractTextPlugin("styles_[hash].css"),
     HtmlWebpackPluginConfig,
     new UglifyJsPlugin({
       uglifyOptions: {
-        ecma: 8,
-        cache: true,
         mangle: true,
+        sourcemap: false,
+        debug: false,
+        minimize: true,
         compress: {
-          warnings: false, // Suppress uglification warnings
-          pure_getters: true,
-          unsafe: true,
-          unsafe_comps: true
+            warnings: false,
+            conditionals: true,
+            unused: true,
+            comparisons: true,
+            sequences: true,
+            dead_code: true,
+            evaluate: true,
+            if_return: true,
+            join_vars: true
         },
         output: {
-          comments: false,
+          comments: false
         },
         exclude: [/\.min\.js$/gi],
       }
@@ -61,7 +67,7 @@ module.exports = {
       algorithm: "gzip",
       test: /\.js$|\.css$|\.html$/,
       threshold: 10240,
-      minRatio: 0
+      minRatio: 0.8
     }),
     new webpack.optimize.AggressiveMergingPlugin()
   ]
