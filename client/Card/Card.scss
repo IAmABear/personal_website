@@ -7,7 +7,7 @@
   align-items: flex-start;
   flex-grow: 1;
   width: 50%;
-  padding: 20px;
+  padding: 1rem;
 
   @media(max-width: map-get($grid-breakpoints, xxl)) {
     width: 33%;
@@ -19,7 +19,7 @@
 
   @media(max-width: map-get($grid-breakpoints, md)) {
     width: 100%;
-    padding: 20px 0;
+    padding: 1rem 0;
   }
 
   @media print {
