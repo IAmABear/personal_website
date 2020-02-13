@@ -19,6 +19,14 @@ const jobs = [
     subTitle: "Front-end developer",
     text: "March 2015 - June 2018"
   },
+
+  {
+    title: "Transavia",
+    imagePath:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Transavia_logo.svg/1280px-Transavia_logo.svg.png",
+    subTitle: "Front-end developer",
+    text: "June 2018 - Oktober 2019"
+  },
   {
     title: "Saxum",
     imagePath:
@@ -27,11 +35,11 @@ const jobs = [
     text: "June 2018 - present"
   },
   {
-    title: "Transavia",
+    title: "Nationale Nederlanden",
     imagePath:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Transavia_logo.svg/1280px-Transavia_logo.svg.png",
+      "https://www.honigenhonig.nl/media/k2/items/cache/1f9ed10eb56cd40cd992151d37066c7e_XL.jpg",
     subTitle: "Front-end developer",
-    text: "June 2018 - present"
+    text: "November 2019 - present"
   }
 ];
 

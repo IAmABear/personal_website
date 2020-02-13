@@ -19,7 +19,7 @@ class Card extends PureComponent {
                 </LazyLoad>
               </div>
 
-              <div className={styles["job"]}>
+              <div className={`${styles["job"]} ${styles[title.replace(' ', '-').toLowerCase()]}`}>
                 <h4 className={styles["title"]} style={{ margin: "1rem 1rem 0 0" }}>{title}</h4>
                 <h5 className="flow-text" style={{ margin: "0" }}>{subTitle}</h5>
               </div>
