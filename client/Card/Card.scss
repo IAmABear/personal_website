@@ -25,6 +25,12 @@
   @media print {
     padding: 0;
   }
+
+
+}
+
+section[data-type="jobs"], section[data-type="internships"],section[data-type="education"] {
+  width: 100%;
 }
 
 .skills {

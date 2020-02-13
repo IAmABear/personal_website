@@ -8,7 +8,7 @@ class Card extends PureComponent {
     const { imagePath, title, subTitle, text, horizontal, type } = this.props;
 
     return (
-      <section className={styles["card-wrapper"]}>
+      <section className={styles["card-wrapper"]} data-type={type}>
         <div className={`${styles["card"]} ${horizontal ? styles['-horizontal'] : ''} card ${type ? styles[type] : ''}`}>
           {type !== "skills"
             ? <Fragment>
