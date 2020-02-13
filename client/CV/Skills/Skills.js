@@ -41,7 +41,7 @@ const skills = [
   {
     title: "React",
     imagePath: "https://cdn.worldvectorlogo.com/logos/react.svg",
-    score: 3,
+    score: 4,
     text: "+/- 3 years",
     horizontal: true
   },
