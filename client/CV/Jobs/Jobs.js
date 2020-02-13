@@ -8,28 +8,28 @@ const jobs = [
   {
     title: "Werf3",
     imagePath:
-      "https://pbs.twimg.com/profile_images/967903155/Werf3_avatar_400x400.png",
+      "http://www.werf3.nl/default/includes/themes/Werf3/images/werf3.png",
     subTitle: "UX designer",
     text: "July 2013 - August 2013"
   },
   {
     title: "GridLine",
     imagePath:
-      "https://www.gridline.nl/assets/products/GridLine-geenBeschrijving-178f6103d469ae5dd9d101921a88ba3c.svg",
-    subTitle: "UX designer / Front-end developer",
-    text: "March 2015 - present"
+      "https://scontent-amt2-1.xx.fbcdn.net/v/t31.0-8/266250_172670172795522_659943_o.jpg?_nc_cat=107&_nc_ohc=fG1qj64hjokAX8AgAYK&_nc_ht=scontent-amt2-1.xx&oh=c4b310d3f290f844c8c40c671728b175&oe=5EC74157",
+    subTitle: "Front-end developer",
+    text: "March 2015 - June 2018"
   },
   {
     title: "Saxum",
     imagePath:
-      "https://secure.meetupstatic.com/photos/event/5/b/b/a/highres_480083482.jpeg",
+      "https://sound2light.nl/wp-content/uploads/2018/12/Saxum.png",
     subTitle: "Front-end developer",
     text: "June 2018 - present"
   },
   {
     title: "Transavia",
     imagePath:
-      "https://www.transavia.com/static/img/logos/transavia-logo-vertical.svg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Transavia_logo.svg/1280px-Transavia_logo.svg.png",
     subTitle: "Front-end developer",
     text: "June 2018 - present"
   }
@@ -40,7 +40,7 @@ const Jobs = () => (
     <h2>Jobs</h2>
     <section className={styles["jobs-overview"]}>
       {jobs.map(j => (
-        <Card key={j.title} {...j} />
+        <Card key={j.title} type="jobs" {...j} />
       ))}
     </section>
   </section>

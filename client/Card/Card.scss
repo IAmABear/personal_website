@@ -71,6 +71,45 @@
   }
 }
 
+.job {
+  display: flex;
+  flex-flow: row;
+  align-items: baseline;
+
+  @media(max-width: map-get($grid-breakpoints, lg)) {
+    flex-flow: column;
+    align-items: center;
+  }
+}
+
+.education {
+  .job {
+    flex-flow: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.jobs, .internships, .education {
+  flex-flow: column !important;
+  padding: 1rem;
+
+  h4 {
+    margin: 0 1rem 0.5rem 0 !important;
+
+    @media(max-width: map-get($grid-breakpoints, lg)) {
+      margin: 0 0 0.5rem 0 !important;
+
+    }
+  }
+
+  img {
+    width: 100% !important;
+    object-fit: contain;
+    padding: 1rem;
+  }
+}
+
 .card {
   display: flex;
   flex-flow: row;
