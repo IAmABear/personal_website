@@ -7,7 +7,7 @@
   align-items: flex-start;
   flex-grow: 1;
   width: 50%;
-  padding: 20px;
+  padding: 1rem;
 
   @media(max-width: map-get($grid-breakpoints, xxl)) {
     width: 33%;
@@ -19,12 +19,18 @@
 
   @media(max-width: map-get($grid-breakpoints, md)) {
     width: 100%;
-    padding: 20px 0;
+    padding: 1rem 0;
   }
 
   @media print {
     padding: 0;
   }
+
+
+}
+
+section[data-type="jobs"], section[data-type="internships"],section[data-type="education"] {
+  width: 100%;
 }
 
 .skills {
@@ -67,6 +73,95 @@
           text-align: right;
         }
       }
+    }
+  }
+}
+
+.job {
+  display: flex;
+  flex-flow: row;
+  align-items: baseline;
+
+  @media(max-width: map-get($grid-breakpoints, lg)) {
+    flex-flow: column;
+    align-items: center;
+  }
+
+  @media print {
+    text-align: left !important;
+    align-items: baseline !important;
+  }
+}
+
+.education {
+  .job {
+    flex-flow: column;
+    align-items: center;
+    text-align: center;
+
+    @media print {
+      text-align: left !important;
+      align-items: flex-start !important;
+    }
+  }
+}
+
+.nationale-nederlanden {
+  flex-flow: column;
+  align-items: center;
+  text-align: center;
+
+  @media print {
+    text-align: left !important;
+    align-items: flex-start !important;
+  }
+}
+
+.jobs, .internships, .education {
+  flex-flow: column !important;
+  padding: 1rem;
+
+  h4 {
+    margin: 0 1rem 0.5rem 0 !important;
+
+    @media(max-width: map-get($grid-breakpoints, lg)) {
+      margin: 0 0 0.5rem 0 !important;
+    }
+  }
+
+  p {
+    margin-top: 1rem;
+  }
+
+  img {
+    width: 100% !important;
+    object-fit: contain;
+    padding: 1rem;
+  }
+
+  @media print {
+    padding: 0;
+    text-align: left !important;
+    align-items: flex-start !important;
+    margin: 0.5rem 0 !important;
+
+    h4 {
+      font-size: 1rem !important;
+      margin: 0 !important;
+    }
+
+    h5 {
+      margin: 0;
+      font-size: 1rem !important;
+    }
+
+    p {
+      margin: 0 !important;
+      font-size: 1rem !important;
+    }
+
+    img {
+      display: none !important
     }
   }
 }
