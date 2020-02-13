@@ -22,7 +22,7 @@ const jobs = [
   {
     title: "Saxum",
     imagePath:
-      "https://media.licdn.com/dms/image/C560BAQEElCBg6etFtQ/company-logo_400_400/0?e=1572480000&v=beta&t=qborkAxIkRRdHGbuhltwb_X6ipxmd9k46vK9SV8hjOE",
+      "https://secure.meetupstatic.com/photos/event/5/b/b/a/highres_480083482.jpeg",
     subTitle: "Front-end developer",
     text: "June 2018 - present"
   },
