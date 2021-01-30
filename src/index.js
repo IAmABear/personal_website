@@ -1,7 +1,7 @@
-import App from "./components/App.svelte";
+import App from './components/App.svelte'
 
 let app = new App({
   target: document.body,
-});
+})
 
-export default App;
+export default App
