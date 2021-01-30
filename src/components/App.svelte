@@ -2,6 +2,7 @@
 <script>
   /* component logic will go here */
   import Contact from './Contact.svelte'
+  import Jobs from './Jobs.svelte'
 </script>
 
 <div class="App">
@@ -15,7 +16,7 @@
       Learn Svelte
     </a>
   </header>
-
+  <Jobs />
   <Contact />
 </div>
 
