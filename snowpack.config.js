@@ -4,7 +4,7 @@ module.exports = {
     public: '/',
     src: '/dist',
   },
-  plugins: ['@snowpack/plugin-svelte'],
+  plugins: ['@snowpack/plugin-svelte', "@snowpack/plugin-optimize"],
   routes: [
     /* Enable an SPA Fallback in development: */
     // {"match": "routes", "src": ".*", "dest": "/index.html"},
