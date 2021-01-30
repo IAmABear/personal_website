@@ -3,6 +3,7 @@
   /* component logic will go here */
   import Contact from './Contact.svelte'
   import Jobs from './Jobs.svelte'
+  import Skills from './Skills.svelte'
 </script>
 
 <div class="App">
@@ -16,6 +17,7 @@
       Learn Svelte
     </a>
   </header>
+  <Skills />
   <Jobs />
   <Contact />
 </div>
