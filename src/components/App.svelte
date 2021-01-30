@@ -1,6 +1,7 @@
 <!-- App.svelte -->
 <script>
   /* component logic will go here */
+  import Contact from './Contact.svelte'
 </script>
 <style>
   /* css will go here */
@@ -16,4 +17,6 @@
       Learn Svelte
     </a>
   </header>
+
+  <Contact />
 </div>
