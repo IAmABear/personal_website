@@ -1,36 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Floyd van Boksel" />
-    <meta name="robots" content="nofollow">
 
-    <link rel="manifest" href="/manifest.json">
-    <meta name="theme-color" content="#2F3BA2" />
-    <link rel="stylesheet" type="text/css" href="/dist/index.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Floyd van Boksel" />
+  <meta name="robots" content="nofollow">
 
-    <title>Floyd van Boksel</title>
-  </head>
-  <body>
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#2F3BA2" />
+  <link rel="stylesheet" type="text/css" href="/dist/index.css" />
 
-    <button id="butInstall">Install app</button>
-    <script type="module" src="/dist/index.js"></script>
+  <title>Floyd van Boksel</title>
+</head>
 
-    <script src="/install.js"></script>
-    <script>
-      if ('serviceWorker' in navigator) {
-        window.addEventListener('load', () => {
-          navigator.serviceWorker.register('/service-worker.js')
-            .then((reg) => {
-              console.log('Service worker registered.', reg);
-            });
-        });
-      }
-    </script>
+<body>
+  <script type="module" src="/dist/index.js"></script>
 
-    <noscript>
-      This page requires JavaScript to function properly.
-    </noscript>
-  </body>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/service-worker.js')
+          .then((reg) => {
+            console.log('Service worker registered.', reg);
+          });
+      });
+    }
+  </script>
+
+  <noscript>
+    This page requires JavaScript to function properly.
+  </noscript>
+</body>
+
 </html>

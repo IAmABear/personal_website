@@ -1,19 +1,23 @@
-<!-- App.svelte -->
 <script>
-  /* component logic will go here */
-  import Contact from './Contact.svelte'
-  import Internships from './Internships.svelte'
-  import Jobs from './Jobs.svelte'
-  import Skills from './Skills.svelte'
 </script>
 
-<div class="App">
-  <Skills />
-  <Jobs />
-  <Internships />
-  <Contact />
+<div class="app">
+  <h1>This website is under construction</h1>
+  <img src="./images/bear_logo_transparant.png" alt="logo" />
+  <h2>Please bear with it</h2>
 </div>
 
 <style>
-  /* css will go here */
+  .app {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media (max-width: 700px) {
+    img {
+      width: 100%;
+    }
+  }
 </style>
