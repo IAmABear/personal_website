@@ -1,7 +1,7 @@
-import App from './components/App.svelte'
+import UnderConstruction from './components/UnderConstruction.svelte'
 
-let app = new App({
+let app = new UnderConstruction({
   target: document.body,
 })
 
-export default App
+export default UnderConstruction
