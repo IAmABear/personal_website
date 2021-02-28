@@ -9,5 +9,8 @@
   <h2 class="text-lg sm:text-xl md:text-3xl">Please bear with it</h2>
 </div>
 
-<style>
+<style global>
+  @import 'tailwindcss/dist/base.css';
+  @import 'tailwindcss/dist/components.css';
+  @import 'tailwindcss/dist/utilities.css';
 </style>
