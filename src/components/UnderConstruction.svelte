@@ -5,7 +5,12 @@
   <h1 class="text-xl sm:text-2xl md:text-3xl">
     This website is under construction
   </h1>
-  <img src="./images/bear_logo_transparant.png" alt="logo" loading="lazy" />
+  <img
+    src="./images/bear_logo_transparant.png"
+    alt="logo"
+    loading="lazy"
+    width="360px"
+  />
   <h2 class="text-lg sm:text-xl md:text-3xl">Please bear with it</h2>
 </div>
 
