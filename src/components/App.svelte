@@ -37,14 +37,14 @@
       class="row-span-2 mx-auto flex flex-col justify-center md:max-w-3/5"
     >
       <h1
-        class="text-2xl text-white font-extrabold font-sans uppercase mb-2 md:text-4xl md:mb-4 lg:text-6xl xl:text-7xl"
+        class="text-2xl text-white font-extrabold font-sans uppercase mb-2 md:text-4xl md:mb-4 lg:text-5xl"
       >
         Floyd van Boksel
       </h1>
       <div class="flex flex-row items-center">
         <hr class="w-20 md:w-52 lg:w-72 xl:w-96" />
         <h2
-          class="text-xl text-white px-4 whitespace-nowrap italic md:text-3xl lg:text-5xl xl:text-6xl"
+          class="text-xl text-white px-4 whitespace-nowrap italic md:text-3xl lg:text-4xl"
         >
           Front-end developer
         </h2>
