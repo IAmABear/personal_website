@@ -1,8 +1,10 @@
 <script>
+  import Contact from './Contact.svelte'
   import Fold from './Fold.svelte'
 </script>
 
 <Fold />
+<Contact />
 
 <style global lang="postcss">
   /* only apply purgecss on utilities, per Tailwind docs */
