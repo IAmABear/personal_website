@@ -1,9 +1,11 @@
 <script>
   import Contact from './Contact.svelte'
   import Fold from './Fold.svelte'
+  import MinorsAndLanguages from './MinorsAndLanguages.svelte'
 </script>
 
 <Fold />
+<MinorsAndLanguages />
 <Contact />
 
 <style global lang="postcss">
