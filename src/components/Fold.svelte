@@ -23,7 +23,7 @@
         <a
           href="to:+31643058239"
           class="font-sans text-xs text-white font-normal sm:text-sm md:text-base items-center md:m-2 lg:text-lg"
-          >+316 43058239</a
+          >+31 643058239</a
         >
         <a
           href="mailto:floyd.van.boksel@gmail.com"
