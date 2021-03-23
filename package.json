@@ -4,7 +4,7 @@
   "main": "src/index.js",
   "repository": "https://github.com/IAmABear/personal_website.git",
   "author": "Floyd van Boksel <floyd.van.boksel@gmail.com>",
-  "license": "MIT",
+  "license": "UNLICENSED",
   "private": true,
   "scripts": {
     "start": "snowpack dev",
