@@ -1,10 +1,12 @@
 <script>
   import Contact from './Contact.svelte'
+  import Education from './Education.svelte'
   import Fold from './Fold.svelte'
   import MinorsAndLanguages from './MinorsAndLanguages.svelte'
 </script>
 
 <Fold />
+<Education />
 <MinorsAndLanguages />
 <Contact />
 
