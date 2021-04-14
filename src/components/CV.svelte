@@ -1,4 +1,5 @@
 <script>
+  import Skills from './Skills.svelte'
 </script>
 
 <div class="backdrop bg-cover bg-no-repeat bg-center flex flex-col">
@@ -18,6 +19,11 @@
         challange both in and outside of work hours so hit me up for a chat over
         a beer or two.
       </p>
+    </section>
+
+    <section class="w-full md:max-w-lg lg:max-w-3xl p-4 m-4 md:pb-16">
+      <h3 class="text-2xl text-center mb-4">Skills</h3>
+      <Skills />
     </section>
   </span>
 </div>
