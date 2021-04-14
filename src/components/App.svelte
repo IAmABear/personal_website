@@ -4,11 +4,13 @@
   import Fold from './Fold.svelte'
   import MinorsAndLanguages from './MinorsAndLanguages.svelte'
   import CV from './CV.svelte'
+  import JobsAndInternships from './JobsAndInternships.svelte'
 </script>
 
 <Fold />
 <CV />
 <Education />
+<JobsAndInternships />
 <MinorsAndLanguages />
 <Contact />
 
