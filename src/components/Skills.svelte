@@ -1,38 +1,40 @@
 <script>
+  import Star from './Star.svelte'
+
   const skills = [
     {
       skill: 'JavaScript',
-      experience: '4/5',
+      experience: 4,
       startDate: '07-01-2014',
       endDate: undefined,
     },
     {
       skill: 'CSS(3)',
-      experience: '3/5',
+      experience: 3,
       startDate: '07-01-2014',
       endDate: undefined,
     },
     {
       skill: 'HTML(5)',
-      experience: '4/5',
+      experience: 4,
       startDate: '07-01-2014',
       endDate: undefined,
     },
     {
       skill: 'Ruby',
-      experience: '3/5',
+      experience: 3,
       startDate: '07-01-2014',
       endDate: '06-01-2018',
     },
     {
       skill: 'GraphQL',
-      experience: '2/5',
+      experience: 2,
       startDate: '06-01-2017',
       endDate: '06-01-2018',
     },
     {
       skill: 'React',
-      experience: '4/5',
+      experience: 4,
       startDate: '06-01-2017',
       endDate: undefined,
     },
@@ -55,13 +57,25 @@
   }
 </script>
 
-<ul>
+<div class="grid gap-8 md:gap-16 md:grid-cols-2">
   {#each skills as { skill, experience, startDate, endDate }}
-    <li>
-      {skill} ({experience}) with +- {yearsOfExperience(
-        new Date(startDate),
-        endDate ? new Date(endDate) : new Date()
-      )} years of experience
-    </li>
+    <article class="grid grid-cols-2 items-center gap-8">
+      <div class="w-24 h-24 bg-black rounded-sm justify-self-end" />
+
+      <div>
+        <h4 class="text-white font-bold">{skill}</h4>
+        <p>
+          +/- {yearsOfExperience(
+            new Date(startDate),
+            endDate ? new Date(endDate) : new Date()
+          )} years
+        </p>
+        <div class="flex">
+          {#each new Array(5) as _item, index}
+            <Star solid={index < experience} />
+          {/each}
+        </div>
+      </div>
+    </article>
   {/each}
-</ul>
+</div>

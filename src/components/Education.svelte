@@ -5,7 +5,7 @@
   <span
     class="backdrop-color grid auto-cols-auto gap-4 justify-items-center text-white"
   >
-    <h2 class="text-3xl mt-16">Education</h2>
+    <h2 class="text-2xl mt-16">Education</h2>
 
     <span
       class="grid auto-rows-auto items-center justify-center mb-16 md:grid-rows-1 md:grid-cols-2 md:mb-32"
