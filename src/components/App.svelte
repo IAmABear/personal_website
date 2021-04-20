@@ -5,8 +5,6 @@
   import MinorsAndLanguages from './MinorsAndLanguages.svelte'
   import CV from './CV.svelte'
   import JobsAndInternships from './JobsAndInternships.svelte'
-  
-  console.log('test?');
 </script>
 
 <Fold />
