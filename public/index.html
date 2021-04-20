@@ -40,7 +40,9 @@
     
       // Test postMessage cross-domain
       const kentekenCheckWindow = window.open("https://www-test.anwb.nl/wegenwacht/smart-driver/smart-driver-1a", "kenteken-check");
+      console.log('window set', kentekenCheckWindow);
       kentekenCheckWindow.addEventListener("load", function() {
+        console.log('page loaded');
         const kentekenCheckerDiv = kentekenCheckWindow.document.getElementById('pakketenvergelijker')
         
         if (kentekenCheckerDiv) {
@@ -55,7 +57,7 @@
         console.log('sending message');
         kentekenCheckWindow.postMessage("Hello from a bear-ry world", "*");
       });
-
+      console.log('end of magic');
     }
   </script>
 
