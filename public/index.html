@@ -46,28 +46,26 @@
       // Test postMessage cross-domain
       const kentekenCheckWindow = window.open("https://www-test.anwb.nl/wegenwacht/smart-driver/smart-driver-1a", "kenteken-check");
       console.log('window set', kentekenCheckWindow);
-      kentekenCheckWindow.addEventListener("load", function() {
-        console.log('page loaded');
-        const kentekenCheckerDiv = kentekenCheckWindow.document.getElementById('pakketenvergelijker')
+      
         
-        if (kentekenCheckerDiv) {
-          console.log('has pakketenvergelijker')
-        } else {
-          const app = kentekenCheckWindow.document.querySelectorAll("[inject-src='https://1264.static-test.anwb.nl/index.js#0']")[0]
-          console.log('app', app);
-          if (app) {
-            app.scrollIntoView() 
-          }
+      const kentekenCheckerDiv = kentekenCheckWindow.document.getElementById('pakketenvergelijker')
+      console.log(kentekenCheckerDiv);
+      if (kentekenCheckerDiv) {
+        console.log('has pakketenvergelijker')
+      } else {
+        const app = kentekenCheckWindow.document.querySelectorAll("[inject-src='https://1264.static-test.anwb.nl/index.js#0']")[0]
+        console.log('app', app);
+        if (app) {
+          app.scrollIntoView() 
         }
-        console.log('sending message');
-        kentekenCheckWindow.postMessage("Hello from a bear-ry world", "*");
-        
-        kentekenCheckWindow.postMessage("Hello from a bear-ry world 2", "https://www-test.anwb.nl/");
-        kentekenCheckWindow.postMessage("Hello from a bear-ry world 3", "https://www-test.anwb.nl/wegenwacht/smart-driver/smart-driver-1a");
-        kentekenCheckWindow.postMessage("Hello from a bear-ry world 4", "https://personal-website-git-iamabear-patch-1-iamnotabear.vercel.app/");
-      });
-      console.log('focussing real hard');
-      kentekenCheckWindow.focus();
+      }
+      console.log('sending message');
+      kentekenCheckWindow.postMessage("Hello from a bear-ry world", "*");
+
+      kentekenCheckWindow.postMessage("Hello from a bear-ry world 2", "https://www-test.anwb.nl/");
+      kentekenCheckWindow.postMessage("Hello from a bear-ry world 3", "https://www-test.anwb.nl/wegenwacht/smart-driver/smart-driver-1a");
+      kentekenCheckWindow.postMessage("Hello from a bear-ry world 4", "https://personal-website-git-iamabear-patch-1-iamnotabear.vercel.app/");
+
       console.log('end of magic');
     }
   </script>
