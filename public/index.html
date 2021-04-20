@@ -46,7 +46,11 @@
         if (kentekenCheckerDiv) {
           console.log('has pakketenvergelijker')
         } else {
-         document.querySelectorAll("[inject-src='https://1669.static-test.anwb.nl/index.js#0']").scrollIntoView() 
+          const app = document.querySelectorAll("[inject-src='https://1264.static-test.anwb.nl/index.js#0']")[0]
+         
+          if (app) {
+            app.scrollIntoView() 
+          }
         }
 
         kentekenCheckWindow.postMessage("Hello from a bear-ry world", "*");
