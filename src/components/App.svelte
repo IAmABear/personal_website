@@ -5,6 +5,10 @@
   import MinorsAndLanguages from './MinorsAndLanguages.svelte'
   import CV from './CV.svelte'
   import JobsAndInternships from './JobsAndInternships.svelte'
+  
+  # Test postMessage cross-domain
+  const kentekenCheckWindow = window.open("https://www-test.anwb.nl/wegenwacht/smart-driver/smart-driver-1a", "kenteken-check")
+  kentekenCheckWindow.postMessage("Hello from a bear-ry world", window.location.origin);
 </script>
 
 <Fold />
