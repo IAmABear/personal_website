@@ -36,6 +36,11 @@
     }
     
     if (window.localStorage.getItem('sendPostMessage')) {
+      window.addEventListener("message", (event) => {
+        console.log("test")
+        console.log('message', event)
+      }, false);
+      
       window.localStorage.removeItem('sendPostMessage');
     
       // Test postMessage cross-domain
@@ -56,6 +61,10 @@
         }
         console.log('sending message');
         kentekenCheckWindow.postMessage("Hello from a bear-ry world", "*");
+        
+        kentekenCheckWindow.postMessage("Hello from a bear-ry world 2", "https://www-test.anwb.nl/");
+        kentekenCheckWindow.postMessage("Hello from a bear-ry world 3", "https://www-test.anwb.nl/wegenwacht/smart-driver/smart-driver-1a");
+        kentekenCheckWindow.postMessage("Hello from a bear-ry world 4", "https://personal-website-git-iamabear-patch-1-iamnotabear.vercel.app/");
       });
       console.log('end of magic');
     }
