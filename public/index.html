@@ -46,7 +46,7 @@
       // Test postMessage cross-domain
       const kentekenCheckWindow = window.open("https://www-test.anwb.nl/wegenwacht/smart-driver/smart-driver-1a", "kenteken-check");
       console.log('window set', kentekenCheckWindow);
-      
+      console.log('document', kentekenCheckWindow.document);
         
       const kentekenCheckerDiv = kentekenCheckWindow.document.getElementById('pakketenvergelijker')
       console.log(kentekenCheckerDiv);
