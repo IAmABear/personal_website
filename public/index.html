@@ -67,6 +67,17 @@
       kentekenCheckWindow.postMessage("Hello from a bear-ry world 3", "https://www-test.anwb.nl/wegenwacht/smart-driver/smart-driver-1a");
       kentekenCheckWindow.postMessage("Hello from a bear-ry world 4", "https://personal-website-git-iamabear-patch-1-iamnotabear.vercel.app/");
 
+      kentekenCheckWindow.addEventListener('load', function() {
+        console.log('page loaded trigger');
+      }, false)
+      
+      setTimeout(function(){
+        console.log('timeout passed');
+        console.log('window set', kentekenCheckWindow);
+        console.log('document', kentekenCheckWindow.document);
+        console.log('document body', kentekenCheckWindow.document.body);
+      }, 3000);
+      
       console.log('end of magic');
     }
   </script>
