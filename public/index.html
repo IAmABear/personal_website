@@ -34,53 +34,49 @@
           });
       });
     }
-    
+
     if (window.localStorage.getItem('sendPostMessage')) {
-      window.addEventListener("message", (event) => {
-        console.log("test")
-        console.log('message', event)
-      }, false);
-      
       window.localStorage.removeItem('sendPostMessage');
-    
-      // Test postMessage cross-domain
+
       const kentekenCheckWindow = window.open("https://www-test.anwb.nl/wegenwacht/smart-driver/smart-driver-1a", "kenteken-check");
-      /**
-      console.log('window set', kentekenCheckWindow);
-      console.log('document', kentekenCheckWindow.document);
-      console.log('document body', kentekenCheckWindow.document.body);
-        
-      const kentekenCheckerDiv = kentekenCheckWindow.document.getElementById('pakketenvergelijker')
-      console.log(kentekenCheckerDiv);
-      if (kentekenCheckerDiv) {
-        console.log('has pakketenvergelijker')
-      } else {
-        const app = kentekenCheckWindow.document.querySelectorAll("[inject-src='https://1264.static-test.anwb.nl/index.js#0']")[0]
-        console.log('app', app);
-        if (app) {
-          app.scrollIntoView() 
-        }
+      console.log('window', kentekenCheckWindow)
+      function isInViewport(el) {
+        const rect = el.getBoundingClientRect();
+        return (
+          rect.top >= 0 &&
+          rect.left >= 0 &&
+          rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+          rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
       }
-      console.log('sending message');
-      kentekenCheckWindow.postMessage("Hello from a bear-ry world", "*");
 
-      kentekenCheckWindow.postMessage("Hello from a bear-ry world 2", "https://www-test.anwb.nl/");
-      kentekenCheckWindow.postMessage("Hello from a bear-ry world 3", "https://www-test.anwb.nl/wegenwacht/smart-driver/smart-driver-1a");
-      kentekenCheckWindow.postMessage("Hello from a bear-ry world 4", "https://personal-website-git-iamabear-patch-1-iamnotabear.vercel.app/");
+      kentekenCheckWindow.addEventListener('load', function () {
+        const magicInterval = window.setInterval(() => {
+          console.log('div', kentekenCheckWindow)
+          console.log('window', kentekenCheckWindow)
+          const kentekenCheckerDiv = kentekenCheckWindow.document.getElementById('kenteken')
 
- */
-      kentekenCheckWindow.addEventListener('load', function() {
-        console.log('page loaded trigger');
+          if (kentekenCheckerDiv) {
+            kentekenCheckerDiv.scrollIntoView();
+
+            setTimeout(() => {
+              kentekenCheckWindow.postMessage("Message one", "*");
+              kentekenCheckWindow.postMessage("Second message", "https://www-test.anwb.nl/");
+              kentekenCheckWindow.postMessage("Third times the charm", "https://www-test.anwb.nl/wegenwacht/smart-driver/smart-driver-1a");
+
+              clearInterval(magicInterval)
+            }, 1000)
+          } else {
+            const app = kentekenCheckWindow.document.querySelectorAll("[inject-src='https://1264.static-test.anwb.nl/index.js#0']")[0]
+
+            if (app) {
+              if (!isInViewport(app)) {
+                app.scrollIntoView()
+              }
+            }
+          }
+        }, 100)
       }, false)
-      
-      setTimeout(function(){
-        console.log('timeout passed');
-        console.log('window set', kentekenCheckWindow);
-        console.log('document', kentekenCheckWindow.document);
-        console.log('document body', kentekenCheckWindow.document.body);
-      }, 500);
-      
-      console.log('end of magic');
     }
   </script>
 
