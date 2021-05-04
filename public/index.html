@@ -35,48 +35,19 @@
       });
     }
 
-    if (window.localStorage.getItem('sendPostMessage')) {
+    const licensePlate = window.localStorage.getItem('sendPostMessage')
+    if (licensePlate) {
       window.localStorage.removeItem('sendPostMessage');
 
-      const kentekenCheckWindow = window.open("https://www-test.anwb.nl/wegenwacht/smart-driver/smart-driver-1a", "kenteken-check");
-      console.log('window', kentekenCheckWindow)
-      function isInViewport(el) {
-        const rect = el.getBoundingClientRect();
-        return (
-          rect.top >= 0 &&
-          rect.left >= 0 &&
-          rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-          rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-        );
-      }
+      const kentekenCheckWindow = window.open("https://www-test.anwb.nl/wegenwacht/smart-driver/smart-driver-1a#kenteken", "kenteken-check");
 
-      kentekenCheckWindow.addEventListener('load', function () {
-        const magicInterval = window.setInterval(() => {
-          console.log('div', kentekenCheckWindow)
-          console.log('window', kentekenCheckWindow)
-          const kentekenCheckerDiv = kentekenCheckWindow.document.getElementById('kenteken')
+      const magicInterval = window.setInterval(() => {
+        console.log('send message 1')
+        kentekenCheckWindow.postMessage(licensePlate, "*");
+        console.log('message send')
 
-          if (kentekenCheckerDiv) {
-            kentekenCheckerDiv.scrollIntoView();
-
-            setTimeout(() => {
-              kentekenCheckWindow.postMessage("Message one", "*");
-              kentekenCheckWindow.postMessage("Second message", "https://www-test.anwb.nl/");
-              kentekenCheckWindow.postMessage("Third times the charm", "https://www-test.anwb.nl/wegenwacht/smart-driver/smart-driver-1a");
-
-              clearInterval(magicInterval)
-            }, 1000)
-          } else {
-            const app = kentekenCheckWindow.document.querySelectorAll("[inject-src='https://1264.static-test.anwb.nl/index.js#0']")[0]
-
-            if (app) {
-              if (!isInViewport(app)) {
-                app.scrollIntoView()
-              }
-            }
-          }
-        }, 100)
-      }, false)
+        clearInterval(magicInterval)
+      }, 2000)
     }
   </script>
 
