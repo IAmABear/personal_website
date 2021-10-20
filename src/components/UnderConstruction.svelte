@@ -11,7 +11,9 @@
     loading="lazy"
     width="360px"
   />
-  <h2 class="text-lg sm:text-xl md:text-3xl">Please bear with it</h2>
+  <h2 class="text-lg sm:text-xl md:text-3xl">
+    Please bear with it a bit longer
+  </h2>
 </div>
 
 <style global lang="postcss">
