@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 
 import Star from '../Star'
 
@@ -8,36 +9,42 @@ const skills = [
     experience: 4,
     startDate: '07-01-2014',
     endDate: undefined,
+    image: '/images/js.svg',
   },
   {
     skill: 'CSS(3)',
     experience: 3,
     startDate: '07-01-2014',
     endDate: undefined,
+    image: '/images/css3.svg',
   },
   {
     skill: 'HTML(5)',
     experience: 4,
     startDate: '07-01-2014',
     endDate: undefined,
+    image: '/images/HTML5.svg',
   },
   {
     skill: 'Ruby',
     experience: 3,
     startDate: '07-01-2014',
     endDate: '06-01-2018',
+    image: '/images/ruby.svg',
   },
   {
     skill: 'GraphQL',
     experience: 2,
     startDate: '06-01-2017',
     endDate: '06-01-2018',
+    image: '/images/graphql.svg',
   },
   {
     skill: 'React',
     experience: 4,
     startDate: '06-01-2017',
     endDate: undefined,
+    image: '/images/react.svg',
   },
 ]
 
@@ -58,9 +65,13 @@ const Skills = () => {
 
   return (
     <div className="grid gap-8 md:gap-16 md:grid-cols-2">
-      {skills.map(({ skill, experience, startDate, endDate }) => (
+      {skills.map(({ skill, experience, startDate, endDate, image }) => (
         <article className="grid grid-cols-2 items-center gap-8" key={skill}>
-          <div className="w-24 h-24 bg-black rounded-sm justify-self-end" />
+          {image ? (
+            <Image src={image} width={50} height={90} />
+          ) : (
+            <div className="w-24 h-24 bg-black rounded-sm justify-self-end" />
+          )}
 
           <div>
             <h4 className="text-white font-bold">{skill}</h4>

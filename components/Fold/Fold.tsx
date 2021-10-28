@@ -1,6 +1,7 @@
 import React from 'react'
 
 import styles from './Fold.module.css'
+
 const Fold = () => (
   <main
     className={`${styles.backdrop} bg-cover bg-no-repeat bg-center flex flex-col max-h-screen min-h-screen`}
