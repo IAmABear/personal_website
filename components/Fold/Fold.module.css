@@ -1,0 +1,7 @@
+.backdrop {
+  background-image: url('/images/laptop.jpg');
+}
+
+.backdropColor {
+  background-color: rgba(6, 52, 70, 0.6);
+}
