@@ -1,0 +1,7 @@
+.backdrop {
+  background-image: url('/images/coffee.jpg');
+}
+
+.backdropColor {
+  background-color: rgba(6, 52, 70, 0.6);
+}
