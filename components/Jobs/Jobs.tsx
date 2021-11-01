@@ -81,7 +81,7 @@ const Jobs = () => (
             key={company}
           >
             {image ? (
-              <Image src={image} width={10} height={50} />
+              <Image src={image} width={10} height={50} alt={company} />
             ) : (
               <div className="w-24 h-24 bg-black rounded-sm justify-self-end" />
             )}

@@ -68,7 +68,7 @@ const Skills = () => {
       {skills.map(({ skill, experience, startDate, endDate, image }) => (
         <article className="grid grid-cols-2 items-center gap-8" key={skill}>
           {image ? (
-            <Image src={image} width={50} height={90} />
+            <Image src={image} width={50} height={90} alt={skill} />
           ) : (
             <div className="w-24 h-24 bg-black rounded-sm justify-self-end" />
           )}
