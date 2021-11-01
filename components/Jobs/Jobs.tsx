@@ -73,7 +73,7 @@ const responsive = {
 const Jobs = () => (
   <section className="width-force p-4">
     <h2 className="text-2xl mt-10 text-center mb-4 text-white">Jobs</h2>
-    <div className="bg-blue-800 p-6 pt-10 m-auto md:max-w-lg lg:max-w-3xl">
+    <div className="bg-gray-800 p-6 pt-10 m-auto md:max-w-lg lg:max-w-3xl">
       <Carousel responsive={responsive}>
         {jobs.map(({ company, role, startDate, endDate, image }) => (
           <article
