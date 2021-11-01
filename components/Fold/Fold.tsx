@@ -49,18 +49,35 @@ const Fold = () => (
         <button
           type="button"
           className="bg-blue-400 text-white p-2 rounded-full py-3 px-6 uppercase font-sans md:px-12 text-xs md:text-base"
+          onClick={() => {
+            document.getElementById('cv').scrollIntoView({
+              behavior: 'smooth',
+            })
+          }}
         >
           View CV
         </button>
         <button
           type="button"
           className="bg-blue-400 text-white p-2 rounded-full py-3 px-6 uppercase font-sans md:px-12 text-xs md:text-base"
+          onClick={() => {
+            document.getElementById('contact').scrollIntoView({
+              behavior: 'smooth',
+            })
+          }}
         >
           Contact
         </button>
       </div>
 
-      <div className="rounded-full h-8 w-8 border-white border-2 text-white flex justify-center items-center m-auto animate-bounce md:text-lg md:h-16 md:w-16">
+      <div
+        className="rounded-full h-8 w-8 border-white border-2 text-white flex justify-center items-center m-auto animate-bounce md:text-lg md:h-16 md:w-16"
+        onClick={() => {
+          document.getElementById('cv').scrollIntoView({
+            behavior: 'smooth',
+          })
+        }}
+      >
         ᐯ
       </div>
     </span>

@@ -7,6 +7,7 @@ import styles from './CV.module.css'
 const CV = () => (
   <div
     className={`${styles.backdrop} bg-cover bg-no-repeat bg-center flex flex-col`}
+    id="cv"
   >
     <span
       className={`${styles.backdropColor} grid auto-cols-auto gap-4 justify-items-center text-white`}
