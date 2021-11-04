@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 const ListItem = () => (
   <div className="flex flex-col items-center justify-center min-h-screen">
-    <h1 className="text-xl sm:text-2xl md:text-3xl">
+    <h1 className="text-xl sm:text-3xl md:text-3xl">
       This website is under construction
     </h1>
     <Image

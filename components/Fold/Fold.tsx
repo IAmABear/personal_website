@@ -34,7 +34,7 @@ const Fold = () => (
       </header>
 
       <article className="row-span-2 mx-auto flex flex-col justify-center md:max-w-3/5">
-        <h1 className="text-2xl text-white font-extrabold font-sans uppercase mb-2 md:text-4xl md:mb-4 lg:text-5xl">
+        <h1 className="text-3xl text-white font-extrabold font-sans uppercase mb-2 md:text-4xl md:mb-4 lg:text-5xl">
           Floyd van Boksel
         </h1>
         <div className="flex flex-row items-center">

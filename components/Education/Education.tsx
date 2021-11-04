@@ -9,7 +9,7 @@ const Education = () => (
     <span
       className={`${styles.backdropColor} grid auto-cols-auto gap-4 justify-items-center text-white`}
     >
-      <h2 className="text-2xl mt-16">Education</h2>
+      <h2 className="text-3xl mt-16">Education</h2>
 
       <span className="grid auto-rows-auto items-center justify-center mb-16 md:grid-rows-1 md:grid-cols-2 md:mb-32">
         <section className="items-center justify-center flex flex-col">

@@ -2,7 +2,7 @@ import React from 'react'
 
 const Languages = () => (
   <section className="text-white font-sans font-normal">
-    <h4 className="text-2xl">Languages</h4>
+    <h4 className="text-3xl">Languages</h4>
     <ul>
       <li className="py-2 flex items-center">
         <img

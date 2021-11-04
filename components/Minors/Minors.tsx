@@ -15,7 +15,7 @@ const minors = [
 
 const Minors = () => (
   <section className="text-white font-sans font-normal">
-    <h4 className="text-2xl">Minors</h4>
+    <h4 className="text-3xl">Minors</h4>
     <ul>
       {minors.map(({ minor, startDate, endDate }) => (
         <li className="py-2 md:max-w-xs" key={minor}>
