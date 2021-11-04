@@ -3,6 +3,7 @@ import Image from 'next/image'
 
 import Carousel from 'react-multi-carousel'
 
+import styles from './Intership.module.css'
 import 'react-multi-carousel/lib/styles.css'
 
 const internships = [
@@ -43,9 +44,9 @@ const responsive = {
 }
 
 const Interships = () => (
-  <section className="width-force p-4 pb-10">
+  <section className={`${styles.widthForce} p4`}>
     <h2 className="text-2xl mt-16 text-center mb-4 text-white">Internships</h2>
-    <div className="bg-gray-800 p-6 pt-10 m-auto md:max-w-lg lg:max-w-3xl">
+    <div className="bg-gray-800 p-6 pt-10 m-4 md:m-auto md:max-w-lg lg:max-w-3xl">
       <Carousel responsive={responsive}>
         {internships.map(({ company, startDate, endDate, image }) => (
           <article
