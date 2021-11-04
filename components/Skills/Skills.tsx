@@ -3,6 +3,8 @@ import Image from 'next/image'
 
 import Star from '../Star'
 
+import styles from './Skills.module.css'
+
 const skills = [
   {
     skill: 'JavaScript',
@@ -64,7 +66,9 @@ const Skills = () => {
   }
 
   return (
-    <div className="grid gap-8 md:gap-16 md:grid-cols-2">
+    <div
+      className={`${styles.backdropColor} grid gap-8 md:gap-16 md:grid-cols-2 m-2 rounded p-6`}
+    >
       {skills.map(({ skill, experience, startDate, endDate, image }) => (
         <article className="grid grid-cols-2 items-center gap-8" key={skill}>
           {image ? (
