@@ -34,8 +34,8 @@ const IndexPage = () => {
         <>
           <Fold />
           <CV />
-          <Education />
           <JobsAndInternships />
+          <Education />
 
           <div className="grid gap-8 p-4 grid-rows-2 mx-auto bg-gray-900 md:grid-cols-2 md:mx-auto md:flex md:p-16 md:justify-center md:space-x-8 lg:space-x-20">
             <Minors />
