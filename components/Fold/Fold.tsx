@@ -19,7 +19,7 @@ const Fold = () => (
 
         <div className="flex flex-col divide-y divide-white text-right md:text-justify md:flex-row md:divide-x md:divide-y-0 ">
           <a
-            href="to:+31643058239"
+            href="tel:+31643058239"
             className="font-sans text-xs text-white font-normal sm:text-sm md:text-base items-center md:m-2 lg:text-lg"
           >
             +31 643058239
