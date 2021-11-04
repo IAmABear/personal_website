@@ -8,7 +8,7 @@ const Languages = () => (
         <img
           src="./images/netherlands.png"
           alt="Netherlands"
-          className="rounded-full w-8 h-8 mr-4"
+          className="rounded-full w-8 h-8 mr-4 font-serif"
         />{' '}
         Decent
       </li>
@@ -16,7 +16,7 @@ const Languages = () => (
         <img
           src="./images/english.png"
           alt="English"
-          className="rounded-full w-8 h-8 mr-4"
+          className="rounded-full w-8 h-8 mr-4 font-serif"
         />{' '}
         Good
       </li>

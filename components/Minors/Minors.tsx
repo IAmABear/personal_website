@@ -18,7 +18,7 @@ const Minors = () => (
     <h4 className="text-3xl">Minors</h4>
     <ul>
       {minors.map(({ minor, startDate, endDate }) => (
-        <li className="py-2 md:max-w-xs" key={minor}>
+        <li className="py-2 md:max-w-xs font-serif" key={minor}>
           {minor}
           <br />({startDate} - {endDate})
         </li>

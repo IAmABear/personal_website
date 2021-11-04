@@ -20,13 +20,13 @@ const Fold = () => (
         <div className="flex flex-col divide-y divide-white text-right md:text-justify md:flex-row md:divide-x md:divide-y-0 ">
           <a
             href="tel:+31643058239"
-            className="font-sans text-xs text-white font-normal sm:text-sm md:text-base items-center md:m-2 lg:text-lg hover:underline"
+            className="font-sans text-xs text-white font-normal sm:text-sm md:text-base items-center md:m-2 lg:text-lg hover:underline font-serif"
           >
             +31 643058239
           </a>
           <a
             href="mailto:floyd.van.boksel@gmail.com"
-            className="font-sans text-xs text-white font-normal sm:text-sm md:text-base md:m-2 md:px-4 lg:text-lg hover:underline"
+            className="font-sans text-xs text-white font-normal sm:text-sm md:text-base md:m-2 md:px-4 lg:text-lg hover:underline font-serif"
           >
             floyd.van.boksel@gmail.com
           </a>
@@ -48,7 +48,7 @@ const Fold = () => (
       <div className="grid grid-cols-2 gap-2 max-h-12 max-w-xs m-auto md:gap-6 md:max-w-sm">
         <button
           type="button"
-          className="bg-blue-400 text-white p-2 rounded-full py-3 px-6 uppercase font-sans md:px-12 text-xs md:text-base hover:bg-blue-500"
+          className="bg-blue-400 text-white p-2 rounded-full py-3 px-6 uppercase font-sans md:px-12 text-xs md:text-base hover:bg-blue-500 font-serif"
           onClick={() => {
             document.getElementById('cv').scrollIntoView({
               behavior: 'smooth',
@@ -59,7 +59,7 @@ const Fold = () => (
         </button>
         <button
           type="button"
-          className="bg-blue-400 text-white p-2 rounded-full py-3 px-6 uppercase font-sans md:px-12 text-xs md:text-base hover:bg-blue-500"
+          className="bg-blue-400 text-white p-2 rounded-full py-3 px-6 uppercase font-sans md:px-12 text-xs md:text-base hover:bg-blue-500 font-serif"
           onClick={() => {
             document.getElementById('contact').scrollIntoView({
               behavior: 'smooth',

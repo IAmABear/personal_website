@@ -88,8 +88,8 @@ const Jobs = () => (
             )}
 
             <div>
-              <h4 className="text-white font-bold">{company}</h4>
-              <p>
+              <h4 className="text-white font-bold font-serif">{company}</h4>
+              <p className="font-serif">
                 {startDate} - {endDate ? endDate : 'present'}
               </p>
               <i>{role}</i>

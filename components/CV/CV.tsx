@@ -14,7 +14,7 @@ const CV = () => (
     >
       <h2 className="text-4xl mt-16 italic">Curriculum Vitae</h2>
 
-      <section className="md:max-w-lg lg:max-w-3xl p-8 m-4 bg-gray-800 md:p-16">
+      <section className="md:max-w-lg lg:max-w-3xl p-8 m-4 bg-gray-800 md:p-16 font-serif">
         <h3 className="text-3xl text-center mb-4">Profile</h3>
         <p className="text-base md:text-lg">
           Hi, my name is Floyd van Boksel, a{' '}

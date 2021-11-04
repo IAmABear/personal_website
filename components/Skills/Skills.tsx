@@ -78,8 +78,8 @@ const Skills = () => {
           )}
 
           <div>
-            <h4 className="text-white font-bold">{skill}</h4>
-            <p>
+            <h4 className="text-white font-bold font-serif">{skill}</h4>
+            <p className="font-serif">
               +/-{' '}
               {yearsOfExperience(
                 new Date(startDate),

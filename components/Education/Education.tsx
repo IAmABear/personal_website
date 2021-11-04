@@ -17,9 +17,15 @@ const Education = () => (
           alt="Hogeschool van Amsterdam"
           className="max-w-xs max-h-20 bg-white rounded-full p-2 my-4"
         />
-        <h3 className="text-lg text-center">Hogeschool van Amsterdam</h3>
-        <h4 className="text-sm">Field of Study: Interaction Design</h4>
-        <h5 className="text-sm italic">September 2010 - January 2015</h5>
+        <h3 className="text-lg text-center font-serif">
+          Hogeschool van Amsterdam
+        </h3>
+        <h4 className="text-sm font-serif">
+          Field of Study: Interaction Design
+        </h4>
+        <h5 className="text-sm italic font-serif">
+          September 2010 - January 2015
+        </h5>
       </section>
     </span>
   </div>
