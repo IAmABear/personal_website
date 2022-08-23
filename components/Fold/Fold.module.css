@@ -5,3 +5,8 @@
 .backdropColor {
   background-color: rgba(6, 52, 70, 0.6);
 }
+
+
+.minButtonSize {
+  min-height: 40px;
+}

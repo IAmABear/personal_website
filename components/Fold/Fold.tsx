@@ -20,13 +20,13 @@ const Fold = () => (
         <div className="flex flex-col divide-y divide-white text-right md:text-justify md:flex-row md:divide-x md:divide-y-0 ">
           <a
             href="tel:+31643058239"
-            className="font-sans text-xs text-white font-normal sm:text-sm md:text-base items-center md:m-2 lg:text-lg hover:underline font-serif"
+            className={`${styles.minButtonSize} flex items-center justify-end font-sans text-sm text-white font-normal no-underline md:mt-0 mb:block mb-2 md:mb-0 sm:text-sm md:text-base items-center md:m-2 lg:text-lg hover:underline font-serif`}
           >
             +31 643058239
           </a>
           <a
             href="mailto:floyd.van.boksel@gmail.com"
-            className="font-sans text-xs text-white font-normal sm:text-sm md:text-base md:m-2 md:px-4 lg:text-lg hover:underline font-serif"
+            className={`${styles.minButtonSize} flex items-center font-sans text-sm text-white font-normal mb:block md:pt-0 sm:text-sm md:text-base md:m-2 md:px-4 lg:text-lg hover:underline font-serif`}
           >
             floyd.van.boksel@gmail.com
           </a>
