@@ -1,10 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 
-import Carousel from 'react-multi-carousel'
-
 import styles from './Jobs.module.css'
-import 'react-multi-carousel/lib/styles.css'
 
 const jobs = [
   {
@@ -51,52 +48,30 @@ const jobs = [
   },
 ]
 
-const responsive = {
-  superLargeDesktop: {
-    // the naming can be any, depends on you.
-    breakpoint: { max: 4000, min: 3000 },
-    items: 5,
-  },
-  desktop: {
-    breakpoint: { max: 3000, min: 1024 },
-    items: 3,
-  },
-  tablet: {
-    breakpoint: { max: 1024, min: 464 },
-    items: 2,
-  },
-  mobile: {
-    breakpoint: { max: 464, min: 0 },
-    items: 1,
-  },
-}
-
 const Jobs = () => (
   <section className={`${styles.widthForce} p4`}>
     <h2 className="text-3xl mt-10 text-center mb-4 text-white">Jobs</h2>
-    <div className={`${styles.backdropColor} p-6 pt-10 m-4 md:m-auto md:max-w-lg lg:max-w-3xl`}>
-      <Carousel responsive={responsive}>
-        {jobs.map(({ company, role, startDate, endDate, image }) => (
-          <article
-            className="grid grid-rows-2 items-center gap-4"
-            key={company}
-          >
-            {image ? (
-              <Image src={image} width={10} height={50} alt={company} />
-            ) : (
-              <div className="w-24 h-24 bg-black rounded-sm justify-self-end" />
-            )}
+    <div className={`${styles.backdropColor} grid p-6 pt-10 m-4 gap-4 md:grid-cols-2 md:m-auto md:max-w-lg lg:max-w-3xl`}>
+      {jobs.map(({ company, role, startDate, endDate, image }) => (
+        <article
+          className="grid grid-cols-2 items-center gap-4 pt-4"
+          key={company}
+        >
+          {image ? (
+            <Image src={image} width={10} height={50} alt={company} />
+          ) : (
+            <div className="w-24 h-24 bg-black rounded-sm justify-self-end" />
+          )}
 
-            <div>
-              <h4 className="text-white font-bold font-serif">{company}</h4>
-              <p className="font-serif">
-                {startDate} - {endDate ? endDate : 'present'}
-              </p>
-              <i>{role}</i>
-            </div>
-          </article>
-        ))}
-      </Carousel>
+          <div>
+            <h4 className="text-white font-bold font-serif">{company}</h4>
+            <p className="font-serif">
+              {startDate} - {endDate ? endDate : 'present'}
+            </p>
+            <i>{role}</i>
+          </div>
+        </article>
+      ))}
     </div>
   </section>
 )
