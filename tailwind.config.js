@@ -1,22 +1,14 @@
 module.exports = {
-    purge: {
-      content: ["./src/**/*.svelte"],
-      options: {
-        keyframes: true
-      }
+  purge: ['**/*.tsx', '**/*.ts'],
+  darkMode: false, // or 'media' or 'class'
+  theme: {
+    fontFamily: {
+      serif: ['Roboto', 'ui-serif', 'Georgia'],
     },
-    theme: {
-      fontFamily: {
-        'sans': ['Raleway', 'Helvetica', 'Arial', 'sans-serif']
-      },
-      rotate: {
-        '0': '0',
-        '45': '45deg',
-        '90': '90deg',
-        '180': '180deg',
-        '270': '270deg',
-      }
-    },
-    variants: {},
-    plugins: [],
-  };
+    extend: {},
+  },
+  variants: {
+    extend: {},
+  },
+  plugins: [],
+}

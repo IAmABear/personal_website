@@ -1,0 +1,13 @@
+.backdrop {
+  background-image: url('/images/man_code.jpg');
+}
+
+.backdropColor {
+  background-color: rgba(6, 52, 70, 0.6);
+}
+
+.underline {
+  text-decoration-thickness: 3px;
+  /* bg-blue-400 */
+  text-decoration-color: rgba(96, 165, 250, 1);
+}
