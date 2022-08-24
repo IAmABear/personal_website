@@ -5,10 +5,17 @@ import styles from './Jobs.module.css'
 
 const jobs = [
   {
+    company: 'Nationale Nederlanden',
+    role: 'Front-end developer',
+    startDate: '20-02-2022',
+    endDate: '01-05-2022',
+    image: '/images/nn.svg',
+  },
+  {
     company: 'ANWB',
     role: 'Front-end developer',
     startDate: '01-04-2020',
-    endDate: undefined,
+    endDate: '19-02-2022',
     image: '/images/anwb.svg',
   },
   {
