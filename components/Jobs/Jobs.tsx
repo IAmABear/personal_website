@@ -58,7 +58,9 @@ const jobs = [
 const Jobs = () => (
   <section className={`${styles.widthForce} p4`}>
     <h2 className="text-3xl mt-10 text-center mb-4 text-white">Jobs</h2>
-    <div className={`${styles.backdropColor} grid p-6 pt-10 m-4 gap-4 md:grid-cols-2 md:m-auto md:max-w-lg lg:max-w-3xl`}>
+    <div
+      className={`${styles.backdropColor} grid p-6 pt-10 m-4 gap-4 md:grid-cols-2 md:m-auto md:max-w-lg lg:max-w-3xl`}
+    >
       {jobs.map(({ company, role, startDate, endDate, image }) => (
         <article
           className="grid grid-cols-2 items-center gap-4 pt-4"
@@ -73,7 +75,7 @@ const Jobs = () => (
           <div>
             <h4 className="text-white font-bold font-serif">{company}</h4>
             <p className="font-serif">
-              {startDate} - {endDate ? endDate : 'present'}
+              {startDate} - <br /> {endDate ? endDate : 'present'}
             </p>
             <i>{role}</i>
           </div>
