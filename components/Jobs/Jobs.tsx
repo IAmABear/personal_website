@@ -5,6 +5,13 @@ import styles from './Jobs.module.css'
 
 const jobs = [
   {
+    company: 'Saxum',
+    role: 'Front-end developer',
+    startDate: '01-06-2018',
+    endDate: undefined,
+    image: '/images/saxum.svg',
+  },
+  {
     company: 'Nationale Nederlanden',
     role: 'Front-end developer',
     startDate: '20-02-2022',
@@ -31,13 +38,6 @@ const jobs = [
     startDate: '01-06-2018',
     endDate: '31-10-2019',
     image: '/images/transvia.svg',
-  },
-  {
-    company: 'Saxum',
-    role: 'Front-end developer',
-    startDate: '01-06-2018',
-    endDate: undefined,
-    image: '/images/saxum.svg',
   },
   {
     company: 'GridLine',
